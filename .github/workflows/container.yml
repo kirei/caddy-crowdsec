@@ -48,6 +48,6 @@ jobs:
           sbom: true
           tags: ${{ steps.meta.outputs.tags }}
       - name: Delete untagged containers
-        uses: dataaxiom/ghcr-cleanup-action@cd0cdb900b5dbf3a6f2cc869f0dbb0b8211f50c4
+        uses: dataaxiom/ghcr-cleanup-action@v1.3.0
         with:
           delete-untagged: true
